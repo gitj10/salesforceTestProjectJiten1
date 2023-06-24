@@ -1,0 +1,19 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,lightning:availableForFlowScreens">
+    <aura:attribute name="success" type="Boolean" />
+    <aura:attribute name="latitude" type="String" />
+    <aura:attribute name="longitude" type="String" />
+    <aura:attribute name="errorMessage" type="String" />
+
+    <div class="slds-m-around_x-large">
+
+        <lightning:button label="Get My Location" variant="brand" class="slds-align_absolute-center" onclick="{!c.getLocation}" />
+
+        <aura:if isTrue="{!v.success}">
+
+            <p class="slds-align_absolute-center lds-m-around_x-large">Please click next</p>
+
+        </aura:if>
+
+    </div>
+    
+</aura:component>

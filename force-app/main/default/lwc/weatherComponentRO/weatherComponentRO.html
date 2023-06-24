@@ -1,0 +1,30 @@
+<template>
+
+    <template if:true={weatherData}>
+
+        <div class="slds-border--top">
+
+            <lightning-card title="Weather Information" icon-name="standard:home">
+                <div class="slds-p-around_medium">
+                    <div class="slds-grid slds-wrap slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <p><strong>Location:</strong> {weatherData.name}, {weatherData.country}</p>
+                            <p><strong>Temperature:</strong> {weatherData.temp_c}&deg;C</p>
+                            <p><strong>Description:</strong> {weatherData.text}</p>
+                            <p><strong>Wind:</strong> {weatherData.wind_kph} km/h</p>                                  
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                        <p><strong>Visibility:</strong> {weatherData.vis_km} km</p>
+                        <p><strong>Humidity:</strong> {weatherData.humidity}%</p>
+                        <p><strong>Precipitation:</strong> {weatherData.precip_mm} mm</p>
+                        <p><strong>UV Rating:</strong> {weatherData.uv}</p>   
+                        </div>
+                    </div>
+                </div>
+            </lightning-card>  
+
+        </div>
+        
+    </template>
+
+</template>

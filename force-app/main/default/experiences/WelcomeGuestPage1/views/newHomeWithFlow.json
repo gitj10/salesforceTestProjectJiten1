@@ -1,0 +1,46 @@
+{
+  "appPageId" : "e70cd7a1-9978-4d45-af51-ec6518deda18",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "54b23fa9-41b4-4add-8ac8-fb100a2786a9",
+  "label" : "NewHomeWithFlow",
+  "regions" : [ {
+    "id" : "d9b17b3f-7cb5-4fb6-98de-a57c4245213a",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:auraFlowLauncher",
+      "id" : "3020b139-2fd0-477a-8121-f90358c24527",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2b7d02b8-e74e-479e-a895-41d423249367",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "1dcd262b-0d37-4865-b367-31051666db5a",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "NewHomeWithFlow"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d674fb55-0957-4889-aba6-d3e81e77b07f",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "84658c5c-6901-4800-a4be-0632009f7758",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-newhomewithflow"
+}

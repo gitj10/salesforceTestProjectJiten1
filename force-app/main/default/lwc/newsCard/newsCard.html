@@ -1,0 +1,23 @@
+<template>
+
+    <template if:true={newsData}>
+        <lightning-card title={newsData.title}>
+            <div class="slds-p-around_medium slds-border--bottom">
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-1">                        
+                        <p>{newsData.description}</p>
+                        <p class="small-heading">{newsData.source.name}</p>
+                    </div>
+                </div>
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-1">
+                        <p class="footer slds-float--right">
+                            Published At: {formattedDate}<a href={newsData.url} target="_blank">Read More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </lightning-card>
+    </template>
+
+</template>

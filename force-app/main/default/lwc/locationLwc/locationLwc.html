@@ -1,0 +1,34 @@
+<template>
+
+  <lightning-card>
+
+    <div class="slds-m-around_x-large">
+
+      <lightning-button class="slds-align_absolute-center" label="Get My Location" variant="brand" onclick={getLocation}></lightning-button>
+
+    </div>
+
+      <template if:true={latitude}>
+        <div class="slds-m-around_x-large slds-p-bottom--xx-large" style="max-width:50%; margin-left: 25%;">
+
+            <lightning-map
+                map-markers={mapMarkers}
+                center={mapCenter}
+                zoom-level={mapZoomLevel}
+                show-footer>
+            </lightning-map>
+
+        </div>
+    </template>
+
+  </lightning-card>  
+  <br>  
+  
+  <template if:true={latitude}>
+
+    <c-weather-component latitude={latitude} longitude={longitude}></c-weather-component>
+
+  </template>
+      
+
+</template>

@@ -1,0 +1,24 @@
+<template>
+
+    <div class="slds-border--top">
+      <lightning-card title="Latest News" icon-name="standard:news">
+        <template if:true={newsArticles}>        
+          <ul class="slds-p-horizontal_small">
+            <template for:each={newsArticles} for:item="article">
+
+              <div key={article.url}>
+                  <c-news-card-r-o article={article}></c-news-card-r-o>
+              </div>
+              
+            </template>
+          </ul>
+        </template>
+
+        <template if:false={newsArticles}>
+          <p class="slds-p-horizontal_small">No news articles found.</p>
+        </template>
+      </lightning-card>
+    </div>
+
+
+  </template>

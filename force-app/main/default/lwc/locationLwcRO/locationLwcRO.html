@@ -1,0 +1,38 @@
+<template>
+
+    <lightning-card>
+  
+        <template if:true={latitude}>
+            
+          <div class="slds-m-around_x-large slds-p-bottom--xx-large" style="max-width:50%; margin-left: 25%;">
+  
+              <lightning-map
+                  map-markers={mapMarkers}
+                  center={mapCenter}
+                  zoom-level={mapZoomLevel}
+                  show-footer>
+              </lightning-map>
+  
+          </div>
+      </template>
+  
+    </lightning-card>  
+    
+    <br>  
+    
+    <template if:true={weatherObj}>
+  
+      <c-weather-component-r-o weather-data={weatherObj} ></c-weather-component-r-o>
+  
+    </template>
+
+    <br> 
+
+    <template if:true={newsDatObj}>
+  
+      <c-news-component-r-o news-articles={newsDatObj}></c-news-component-r-o>
+  
+    </template>
+            
+  
+  </template>

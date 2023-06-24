@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "54b23fa9-41b4-4add-8ac8-fb100a2786a9",
+  "appPageId" : "e70cd7a1-9978-4d45-af51-ec6518deda18",
+  "configurationTags" : [ ],
+  "id" : "34545d3f-60fc-4bf7-86a0-432fd5ce4ed2",
+  "label" : "NewHomeWithFlow",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-newhomewithflow",
+  "type" : "route",
+  "urlPrefix" : "newhomewithflow"
+}
